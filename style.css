@@ -1,0 +1,19 @@
+:root{
+    --cor-branca: #fffffe;
+    --cor-preto: #16161a;
+    --cor-cinza: #94a1b2;
+    --cor-roxa: #7f5af0;
+}
+
+body{
+    background-color: var(--cor-preto);
+}
+
+.logo{
+    height: 5rem;
+    margin-left: .5rem;
+}
+
+.active{ 
+    background-color: var(--cor-roxa);
+}
