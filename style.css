@@ -3,10 +3,17 @@
     --cor-preto: #16161a;
     --cor-cinza: #94a1b2;
     --cor-roxa: #7f5af0;
+    --cor-verde: #2cb67d;
 }
 
 body{
     background-color: var(--cor-preto);
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(10px);
+    height: 6rem;
 }
 
 .logo{
@@ -14,6 +21,48 @@ body{
     margin-left: .5rem;
 }
 
-.active{ 
+.active, .botao-port{ 
     background-color: var(--cor-roxa);
+}
+
+.botao-port:hover{
+    color: var(--cor-roxa);
+    border: 1px solid var(--cor-roxa);
+    transition: ease-in-out .5s;
+}
+
+.msg-boas-vindas, .titulo{
+    color: var(--cor-branca);
+}
+
+p{
+    color: var(--cor-cinza);
+}
+
+.icone-sobre{
+    color: var(--cor-verde);
+}
+
+a{
+    text-decoration: none;
+}
+
+.formulario{
+    color: var(--cor-cinza);
+}
+
+.botao-env{
+    background-color: var(--cor-verde);
+    color: var(--cor-branca);
+}
+
+.botao-env:hover{
+    color: var(--cor-verde);
+    border: 1px solid var(--cor-verde);
+    transition: ease-in-out .5s;
+
+}
+
+.grife{
+    text-decoration: underline var(--cor-verde);
 }

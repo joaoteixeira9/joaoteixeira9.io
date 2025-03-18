@@ -18,13 +18,13 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light rounded" id="sobre" href="#">Sobre</a>
+                            <a class="nav-link text-light rounded" id="h-sobre" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light rounded" id="projetos" href="#">Projetos</a>
+                            <a class="nav-link text-light rounded" id="h-projetos" href="#projetos">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light rounded" id="contato" href="#">Contato</a>
+                            <a class="nav-link text-light rounded" id="h-contato" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -33,12 +33,96 @@
     </header>
     
     <main>
-        
+        <div id="sobre" class="d-flex justify-content-around align-items-center vh-100 ms-5">
+            <div class="d-flex align-items-center w-75 ms-5">
+                <div class="me-5 text-center text-md-start ms-5">
+                    <h1 class="msg-boas-vindas display-4 fw-bold">Olá, eu sou <br> João Teixeira</h1>
+                    <p class="lead mt-3">Desenvolvedor Back-End. <br> PHP | C# | JavaScript | MySQL | HTML | CSS</p>
+                    <a href="#portfolio" class="botao-port btn btn-lg mt-3">Ver Portfólio</a>
+                </div>
+                <img src="./img/Dev.svg" alt="Desenvolvedor programando em um laptop com código na tela" class="w-50 ms-5">
+            </div>
+        </div>
     </main>
+
+    <section " class="d-flex justify-content-around mb-5">
+        <div class="d-flex justify-content-around w-75">
+            <div class="w-25 border-end">
+                <div class="fs-5 mb-3">
+                    <i class="icone-sobre bi bi-lightbulb"> Habilidades</i>
+                </div>
+                <p>Comunicção eficaz</p>
+                <p>Trabalho em equipe</p>
+                <p>Aprendizado contínuo</p>
+                <p>Gestão de projetos</p>
+                <p>Resolução criativa de problemas</p>
+            </div>
+            <div class="w-25 border-end">
+                <div class="fs-5 mb-3">
+                    <i class="icone-sobre bi bi-shield-lock"> Valores / Principios</i>
+                </div>
+                <p>Respeito</p>
+                <p>Integridade</p>
+                <p>Empatia</p>
+                <p>Responsabilidade</p>
+                <p>Transparência</p>
+            </div>
+            <div class="w-25">
+                <div class="fs-5 mb-3">
+                    <i class="icone-sobre bi bi-wechat"> Redes sociais</i>
+                </div>
+                <a href="" class=""><p><i class="bi bi-github me-3"></i>joaoteixeira9</p></a>
+                <a href=""><p><i class="bi bi-linkedin me-3"></i>João Pedro Teixeira da Silva</p></a>
+                <a href=""><p><i class="bi bi-whatsapp me-3"></i>(19) 99326-7370</p></a>
+                <a href=""><p><i class="bi bi-instagram me-3"></i>j.teiixeiira</p></a>
+                <a href=""><p><i class="bi bi-facebook me-3"></i>João Teixeira</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="mt-5 mb-5">
+        <h3 class="titulo text-center">Projetos</h3>
+        <div class="d-flex justify-content-around mt-5">
+            <div class="">
+                <button class="botao-port btn ">Projeto integrador: Hardware</button>
+            </div>
+            <div class="">
+                <button class="botao-port btn">Projeto integrador: Redes</button>
+            </div>
+            <div class="">
+                <button class="botao-port btn">Projeto integrador: Programação</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="formulario mt-5">
+        <h3 class="titulo text-center mt-5">Entre em <span class="grife">contato</span> comigo!</h3>
+        <div class=" w-100 p-5 d-flex justify-content-around">
+            <img src="./img/mail.svg" alt="" class="w-25">
+            <form action="mailto:mentexdev@gmail.com" method="POST" enctype="text/plain" class="w-50">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="form-group text-center mt-3">
+                    <button type="submit" class="botao-env btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
     
     <footer class="p-5 mt-auto">
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/animar-header.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const menuItems = document.querySelectorAll("#sobre, #projetos, #contato");
+const menuItems = document.querySelectorAll("#h-sobre, #h-projetos, #h-contato");
 
 menuItems.forEach(item => {
     item.addEventListener("click", () => {
