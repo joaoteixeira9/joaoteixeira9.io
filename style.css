@@ -37,11 +37,16 @@ header nav {
     text-align: left;
 }
 
-.active, .botao-port{ 
+.active, .botao-port, .botao-proj{ 
     background-color: var(--cor-roxa);
 }
 
-.botao-port:hover{
+.botao-proj{
+    width: 350px;
+    height: 50px;
+}
+
+.botao-port:hover, .botao-proj:hover{
     color: var(--cor-roxa);
     border: 1px solid var(--cor-roxa);
     transition: ease-in-out .5s;
@@ -105,4 +110,5 @@ footer h4{
         width: 80vw;
         height: 50vh;
     }
+
 }
