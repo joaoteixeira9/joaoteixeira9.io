@@ -14,11 +14,15 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" alt="Imagem logo JPT(João Pedro Teixeira)"></a>
                 <span class="navbar-text text-light">João Pedro Teixeira</span>
-
-                <div class="collapse navbar-collapse">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light rounded" id="h-sobre" href="#sobre">Sobre</a>
+                            <a class="nav-link active text-light rounded" id="h-sobre" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light rounded" id="h-projetos" href="#projetos">Projetos</a>
@@ -30,22 +34,23 @@
                 </div>
             </div>
         </nav>
+        
     </header>
     
     <main>
-        <div id="sobre" class="d-flex justify-content-around align-items-center vh-100 ms-5">
-            <div class="d-flex align-items-center w-75 ms-5">
-                <div class="me-5 text-center text-md-start ms-5">
-                    <h1 class="msg-boas-vindas display-4 fw-bold">Olá, eu sou <br> João Teixeira</h1>
-                    <p class="lead mt-3">Desenvolvedor Back-End. <br> PHP | C# | JavaScript | MySQL | HTML | CSS</p>
-                    <a href="#portfolio" class="botao-port btn btn-lg mt-3">Ver Portfólio</a>
-                </div>
-                <img src="./img/Dev.svg" alt="Desenvolvedor programando em um laptop com código na tela" class="w-50 ms-5">
+        <div class="principal">
+            <div class="texto">
+                <h1 class="titulo">Olá, eu sou <br> João Teixeira</h1>
+                <p>Desenvolvedor Back-End. <br> PHP | C# | JavaScript | MySQL | HTML | CSS</p>
+                <a><button class="botao-port btn">Ver Portfólio</button></a>
+            </div>
+            <div>
+                <img src="./img/Dev.svg" class="imagem-dev" alt="Desenvolvedor programando em um laptop com código na tela">
             </div>
         </div>
     </main>
 
-    <section " class="d-flex justify-content-around mb-5">
+    <section class="d-flex justify-content-around mb-5">
         <div class="d-flex justify-content-around w-75">
             <div class="w-25 border-end">
                 <div class="fs-5 mb-3">
@@ -71,7 +76,7 @@
                 <div class="fs-5 mb-3">
                     <i class="icone-sobre bi bi-wechat"> Redes sociais</i>
                 </div>
-                <a href="" class=""><p><i class="bi bi-github me-3"></i>joaoteixeira9</p></a>
+                <a href=""><p><i class="bi bi-github me-3"></i>joaoteixeira9</p></a>
                 <a href=""><p><i class="bi bi-linkedin me-3"></i>João Pedro Teixeira da Silva</p></a>
                 <a href=""><p><i class="bi bi-whatsapp me-3"></i>(19) 99326-7370</p></a>
                 <a href=""><p><i class="bi bi-instagram me-3"></i>j.teiixeiira</p></a>
@@ -119,9 +124,21 @@
         </div>
     </section>
     
-    <footer class="p-5 mt-auto">
+    <footer class="p-5 mt-auto border-top">
+        <div class="text-center">
+            <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" alt="Imagem logo JPT(João Pedro Teixeira)"></a>
+            <span class="navbar-text text-light ms-3">João Pedro Teixeira</span>
+            <h4 class="mb-3">Dia após dia, aprendendo e me superando.</h4>
+            <div class="d-flex justify-content-center mb-3 fs-5">
+                <a href=""><p><i class="bi bi-github me-3"></i></p></a>
+                <a href=""><p><i class="bi bi-linkedin me-3"></i></p></a>
+                <a href=""><p><i class="bi bi-whatsapp me-3"></i></p></a>
+                <a href=""><p><i class="bi bi-instagram me-3"></i></p></a>
+                <a href=""><p><i class="bi bi-facebook me-3"></p></i></a>
+            </div>
+            <p class="titulo">© 2025 JPT <br> Todos os direitos reservados. <br> Design e desenvolvimento por João Pedro Teixeira.</p>
+        </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
