@@ -14,12 +14,18 @@ function Responsividade() {
     const cards = document.querySelectorAll(".card-sobre");
     const cardp = document.querySelectorAll(".card-projeto");
     const itemp = document.querySelectorAll(".item-projeto");
+    const fotoEmail = document.getElementById("foto-email");
+    const formEmail = document.getElementById("form-email");
 
     if (window.innerWidth <= 768) {
         sobre.classList.add('.');
         sobre.classList.remove('d-flex', 'justify-content-around', 'mb-5');
         div.classList.add('d-inline', 'w-100')
         div.classList.remove('d-flex','justify-content-around', 'w-75');
+        fotoEmail.classList.add('w-75');
+        fotoEmail.classList.remove('w-25');
+        formEmail.classList.add('w-75');
+        formEmail.classList.remove('w-50');
         cards.forEach(card => {
             card.classList.add('align-items-center', 'text-center', 'mb-5');
             card.classList.remove('w-25', 'border-end');
@@ -36,6 +42,10 @@ function Responsividade() {
         sobre.classList.remove('sobre');
         div.classList.remove('d-inline', 'w-100');
         div.classList.add('d-flex','justify-content-around', 'w-75');
+        fotoEmail.classList.remove('w-75');
+        fotoEmail.classList.add('w-25');
+        formEmail.classList.remove('w-75');
+        formEmail.classList.add('w-50');
         cards.forEach(card => {
             card.classList.remove('align-items-center', 'text-center', 'mb-5');
             card.classList.add('w-25');
