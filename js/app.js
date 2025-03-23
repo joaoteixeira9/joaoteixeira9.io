@@ -17,7 +17,7 @@ function Responsividade() {
     const fotoEmail = document.getElementById("foto-email");
     const formEmail = document.getElementById("form-email");
 
-    if (window.innerWidth <= 768) {
+    if(window.innerWidth <= 768) {
         sobre.classList.add('.');
         sobre.classList.remove('d-flex', 'justify-content-around', 'mb-5');
         div.classList.add('d-inline', 'w-100')
@@ -37,7 +37,7 @@ function Responsividade() {
         itemp.forEach(item => {
             item.classList.add('mb-5')
         })
-    } else {
+    }else {
         sobre.classList.add('d-flex', 'justify-content-around', 'mb-5');
         sobre.classList.remove('sobre');
         div.classList.remove('d-inline', 'w-100');
@@ -61,5 +61,4 @@ function Responsividade() {
 }
 
 window.addEventListener('resize', Responsividade);
-
 Responsividade();
