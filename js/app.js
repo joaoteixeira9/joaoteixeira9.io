@@ -59,6 +59,51 @@ function Responsividade() {
         })
     }
 }
-
 window.addEventListener('resize', Responsividade);
 Responsividade();
+
+document.getElementById("nome").addEventListener("blur", function(){
+    let nome = this.value;
+    let alerta = document.getElementById("alertaNome");
+
+    if(!nome){
+        alerta.innerHTML = "<i class='bi bi-exclamation-circle'></i> Campo inválido!";
+        alerta.classList.add('text-danger');
+    }else if(nome.length < 2){
+        alerta.innerHTML = "<i class='bi bi-exclamation-circle'></i> O nome precisa ter pelo menos 2 caracteres!";
+        alerta.classList.add('text-danger');
+    }else{
+        alerta.innerHTML = "<i class='bi bi-check-circle'></i> Campo válido!";
+        alerta.classList.remove('text-danger');
+        alerta.classList.add('text-success');
+    }
+})
+
+document.getElementById("email").addEventListener("blur", function(){
+    let email = this.value;
+    let alerta = document.getElementById("alertaEmail");
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if(!email || !regex.test(email)){
+        alerta.innerHTML = "<i class='bi bi-exclamation-circle'></i> Campo inválido!";
+        alerta.classList.add('text-danger');
+    }else{
+        alerta.innerHTML = "<i class='bi bi-check-circle'></i> Campo válido!";
+        alerta.classList.remove('text-danger');
+        alerta.classList.add('text-success');
+    }
+})
+
+document.getElementById("mensagem").addEventListener("blur", function(){
+    let msg = this.value;
+    let alerta = document.getElementById("alertaMensagem");
+
+    if(!msg){
+        alerta.innerHTML = "<i class='bi bi-exclamation-circle'></i> Campo inválido!";
+        alerta.classList.add('text-danger');
+    }else{
+        alerta.innerHTML = "<i class='bi bi-check-circle'></i> Campo válido!";
+        alerta.classList.remove('text-danger');
+        alerta.classList.add('text-success');
+    }
+})
